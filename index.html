@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Aerolab Robotics & IoT Essentials</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Baloo+Chettan+2:wght@600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700;800&display=swap">
 <style>
 /* Layout: one story from night (deep red) to day (cream), joined by an olive "wire" with LED chapter marks. Aerolab brand: deep red, olive green, cream; Bebas Neue / Barlow. */
 :root{
@@ -16,12 +16,16 @@
   --night:#2a0f14; --night-2:#3a161c; --night-deep:#1c0a0d;
   --on-night:#f6f0e3; --muted-night:#d6c4b5; --glow:#f1d58a;
   --on-btn:#ffffff;
-  --display:"Baloo Chettan 2","Noto Sans Malayalam",system-ui,sans-serif;
-  --body:"Barlow","Noto Sans Malayalam",system-ui,sans-serif;
-  --label:"Bebas Neue","Barlow",system-ui,sans-serif;
+  --display:"Barlow","Noto Sans Malayalam","Kartika","Nirmala UI",sans-serif;
+  --body:"Barlow","Noto Sans Malayalam","Kartika","Nirmala UI",sans-serif;
+  --label:"Bebas Neue","Barlow","Noto Sans Malayalam","Kartika","Nirmala UI",sans-serif;
   color-scheme:light;
 }
 *{box-sizing:border-box}
+html,body{margin:0}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -95,7 +99,7 @@ a.tap:hover{transform:translateY(-2px)}
 .worries{display:grid;gap:12px}
 .worries .tap{padding:18px;background:var(--night-2);border:1px solid color-mix(in srgb,var(--on-night) 12%,transparent)}
 .worries a.tap:hover{border-color:var(--olive-light)}
-.worries .tag{font-family:var(--label);font-size:14px;letter-spacing:.1em;color:var(--glow);margin-bottom:2px}
+.worries .tag{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:0;color:var(--glow);margin-bottom:2px}
 .worries h3{margin-bottom:8px}
 .worries p{margin-bottom:0;color:var(--muted-night);font-size:15px}
 
